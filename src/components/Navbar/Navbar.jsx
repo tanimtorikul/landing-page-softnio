@@ -1,7 +1,9 @@
+import { FaBars } from "react-icons/fa6";
 import NavIcon from "../../assets/NavIcon";
 import Button from "../common/Button";
+
 const Navbar = () => {
-  //  navlinks
+  // navlinks
   const navLinks = [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
@@ -16,11 +18,11 @@ const Navbar = () => {
     <div className="flex justify-between items-center px-4 py-4">
       {/* left navbar, logo and links */}
       <div className="flex items-center gap-10">
-     <div className="flex items-center gap-1">
-     <NavIcon/>
-     <h2 className="text-white font-poppins text-3xl">Restaurant</h2>
-     </div>
-        <div className="flex space-x-12">
+        <div className="flex items-center gap-1">
+          <NavIcon />
+          <h2 className="text-white font-poppins text-3xl">Restaurant</h2>
+        </div>
+        <div className="hidden lg:flex space-x-12">
           {navLinks.map((link, index) => (
             <a
               key={index}
@@ -33,9 +35,14 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* right navbar , button */}
-      <div>
+      {/* right navbar, button */}
+      <div className="hidden lg:block">
         <Button text="Book a Table" />
+      </div>
+
+      {/* hamburger for mobile devices */}
+      <div className="lg:hidden flex items-center">
+        <FaBars className="text-white text-3xl" />
       </div>
     </div>
   );

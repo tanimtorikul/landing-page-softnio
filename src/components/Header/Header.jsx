@@ -3,7 +3,7 @@ import Navbar from '../Navbar/Navbar';
 
 const Header = () => {
     return (
-        <div className="bg-tertiary text-white min-h-screen">
+        <div className="bg-secondary text-white min-h-screen">
            <div className='max-w-container mx-auto'>
            <Navbar />
            <Hero />
