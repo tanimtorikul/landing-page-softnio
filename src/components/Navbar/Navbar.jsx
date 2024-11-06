@@ -27,7 +27,7 @@ const Navbar = () => {
             <a
               key={index}
               href={link.href}
-              className="text-white hover:text-primary font-raleway font-medium"
+              className="text-white hover:text-primary font-raleway"
             >
               {link.label}
             </a>

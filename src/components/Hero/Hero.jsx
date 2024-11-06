@@ -13,7 +13,7 @@ const Hero = () => {
       {/* left div */}
       <div className="flex flex-col items-start space-y-6 text-white lg:w-1/2 relative z-10">
         {/* heading with linear gradient with overlapping the image */}
-        <h1 className="bg-[linear-gradient(90deg,_rgba(189,_31,_23,_0)_32.88%,_rgba(189,_31,_23,_0.7)_100%)] text-5xl md:text-9xl font-bold text-left font-display w-full lg:w-[140%] relative z-10 mb-4">
+        <h1 className="bg-[linear-gradient(90deg,_rgba(189,_31,_23,_0)_32.88%,_rgba(189,_31,_23,_0.7)_100%)] text-5xl md:text-9xl text-left font-display w-full lg:w-[140%] relative z-10 mb-4">
           Taste the authentic Saudi cuisine
         </h1>
 
@@ -34,15 +34,15 @@ const Hero = () => {
         />
 
         {/* circled today's offer */}
-        <div className="absolute bottom-20 right-20 lg:bottom-4 lg:right-0 translate-x-14 translate-y-12 flex items-center justify-center w-16 h-16 lg:w-28 lg:h-28 bg-primary rounded-full">
+        <div className="absolute bottom-20 right-20 lg:bottom-10 lg:right-0 translate-x-14 translate-y-12 flex items-center justify-center w-16 h-16 lg:w-28 lg:h-28 bg-primary rounded-full">
           {/* border */}
           <p className="absolute w-full h-full border-2 border-dashed border-secondary rounded-full"></p>
           {/* texts of the circled */}
           <div className="w-full h-full flex flex-col items-center justify-center">
-            <h2 className="font-display lg:text-4xl font-bold text-black text-center">
+            <h2 className="font-display lg:text-4xl text-black text-center">
               Today
             </h2>
-            <h2 className="font-display lg:text-4xl font-bold text-black text-center">
+            <h2 className="font-display lg:text-4xl text-black text-center">
               Offer
             </h2>
           </div>

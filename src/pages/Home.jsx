@@ -1,15 +1,18 @@
+import AboutUs from "../components/AboutUs/AboutUs";
 import Header from "../components/Header/Header";
-
+import bgimage1 from '../assets/about-bg.png'
 
 const Home = () => {
-    return (
+  return (
+    <div>
+      <Header />
+      
+     
         <div>
-           <Header/>
-           <div className="max-w-container mx-auto ">
-
-           </div>
+          <AboutUs />
         </div>
-    );
+      </div>
+  );
 };
 
 export default Home;
