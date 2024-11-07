@@ -4,9 +4,9 @@ import BackgroundFlower from "../../assets/BackgroundFlower";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-4 lg:gap-10 items-center justify-between max-w-container mx-auto px-4 py-12 relative">
+    <div className="flex flex-col lg:flex-row gap-4 lg:gap-10 items-center justify-between max-w-container mx-auto px-8 py-12 relative">
       {/* background flower image */}
-      <div className="absolute top-72 lg:top-2 right-2 lg:right-0 translate-x-2">
+      <div className="absolute top-72 lg:top-3 right-6 lg:right-4 translate-x-2">
         <BackgroundFlower className="w-32 h-auto" />
       </div>
 
@@ -39,10 +39,8 @@ const Hero = () => {
           <p className="absolute w-full h-full border-2 border-dashed border-secondary rounded-full"></p>
           {/* texts of the circled */}
           <div className="w-full h-full flex flex-col items-center justify-center">
-            <h2 className="font-display lg:text-4xl text-black text-center">
-              Today
-            </h2>
-            <h2 className="font-display lg:text-4xl text-black text-center">
+            <h2 className="font-display lg:text-[36px] text-black text-center leading-none">
+              Today <br />
               Offer
             </h2>
           </div>

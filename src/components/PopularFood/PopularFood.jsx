@@ -30,7 +30,7 @@ const PopularFood = () => {
   // duplicate the food items
   const duplicatedFoods = [...foods, ...foods];
   return (
-    <div className="bg-[#FBF7F2] h-[60vh] py-16 relative overflow-hidden">
+    <div className="bg-[#FBF7F2] lg:h-[70vh] py-16 relative overflow-hidden">
       {/* background img */}
       <img
         src={bgimage1}
@@ -38,7 +38,7 @@ const PopularFood = () => {
         className="absolute w-96 left-[-16rem] top-72 transform -translate-y-1/2 -rotate-[70deg] hidden lg:block"
         style={{ objectFit: "cover" }}
       />
-      <div className="max-w-container mx-auto px-4 lg:px-0">
+      <div className="max-w-container mx-auto px-8 lg:px-0">
         {/* section title and nav icons flex each other */}
         <div className="flex justify-between items-center mb-4">
           <SectionTitle

@@ -41,7 +41,7 @@ const BookingForm = () => {
       }}
     >
       {/* content */}
-      <div className="max-w-container mx-auto py-12 px-4 lg:px-0 w-full">
+      <div className="max-w-container mx-auto py-12 px-8 lg:px-0 w-full">
         <SectionTitle
           subtitle="Book Now"
           title="Book Your Table"
@@ -62,7 +62,7 @@ const BookingForm = () => {
                   {...control.register("name", {
                     required: "Name is required",
                   })}
-                  className="w-full px-4 py-2 border bg-transparent text-sm text-white"
+                  className="w-full px-8 py-2 border bg-transparent text-sm text-white"
                 />
                 {errors.name && (
                   <p className="text-red-500 text-sm">{errors.name.message}</p>
@@ -82,7 +82,7 @@ const BookingForm = () => {
                       message: "Invalid email address",
                     },
                   })}
-                  className="w-full px-4 py-2 border bg-transparent text-sm text-white"
+                  className="w-full px-8 py-2 border bg-transparent text-sm text-white"
                 />
                 {errors.email && (
                   <p className="text-red-500 text-sm">{errors.email.message}</p>
@@ -103,7 +103,7 @@ const BookingForm = () => {
                       value={field.value}
                       onChange={(date) => field.onChange(date)}
                       placeholder="Select Reservation Date"
-                      className="w-full px-4 py-2 bg-transparent text-sm text-white rounded-none"
+                      className="w-full px-8 py-2 bg-transparent text-sm text-white rounded-none"
                     />
                   )}
                 />
@@ -129,7 +129,7 @@ const BookingForm = () => {
                       message: "Max 100 people allowed",
                     },
                   })}
-                  className="w-full px-4 py-2 border bg-transparent text-sm text-white"
+                  className="w-full px-8 py-2 border bg-transparent text-sm text-white"
                 />
                 {errors.people && (
                   <p className="text-red-500 text-sm">
@@ -145,7 +145,7 @@ const BookingForm = () => {
                 placeholder="Message"
                 {...control.register("message")}
                 rows={5}
-                className="w-full px-4 py-2 border bg-transparent text-sm text-white"
+                className="w-full px-8 py-2 border bg-transparent text-sm text-white"
               />
             </div>
 

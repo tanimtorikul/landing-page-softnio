@@ -1,9 +1,10 @@
-import { Toaster } from "react-hot-toast";
+
 import AboutUs from "../components/AboutUs/AboutUs";
 import BookingForm from "../components/BookingForm/BookingForm";
 import Header from "../components/Header/Header";
 import PopularFood from "../components/PopularFood/PopularFood";
-
+import Testimonial from "../components/Testimonial/Testimonial";
+import Footer from '../components/Footer/Footer'
 const Home = () => {
   return (
     <div>
@@ -12,7 +13,9 @@ const Home = () => {
       <div>
         <AboutUs />
         <PopularFood />
-        <BookingForm/>
+        <BookingForm />
+        <Testimonial/>
+        <Footer/>
       </div>
     </div>
   );

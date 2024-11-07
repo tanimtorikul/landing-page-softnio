@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "customerName": "John Doe",
+      "customerImg": "",
+      "review": "Had an amazing experience! The service was excellent and the atmosphere was perfect. Highly recommended!",
+      "address": "New York, USA",
+      "youtubeVideo": ""
+    },
+    {
+      "id": 2,
+      "customerName": "Jane Smith",
+      "customerImg": "",
+      "review": "The food was delicious and the ambiance was great. I'll definitely be back again!",
+      "address": "London, UK",
+      "youtubeVideo": ""
+    }
+  ]
+  

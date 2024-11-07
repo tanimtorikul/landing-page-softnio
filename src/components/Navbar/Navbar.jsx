@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center px-4 py-4">
+    <div className="flex justify-between items-center px-8 py-4">
       {/* left navbar, logo and links */}
       <div className="flex items-center gap-10">
         <div className="flex items-center gap-1">

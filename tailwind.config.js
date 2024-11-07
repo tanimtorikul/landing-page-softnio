@@ -22,6 +22,10 @@ export default {
         shadow: "-5px 22px 26px 0px rgba(95, 95, 95, 0.25)",
         icon: "0px 7px 16px 0px rgba(0, 0, 0, 0.1)",
       },
+      fontSize: {
+        '4xl': '40px',
+        '6xl': '62px', 
+      },
     },
   },
   plugins: [],

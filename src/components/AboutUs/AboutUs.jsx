@@ -35,7 +35,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="py-12 relative overflow-hidden px-4">
+    <div className="py-12 relative overflow-hidden px-8">
       {/* background image */}
       <img
         src={bgimage1}
