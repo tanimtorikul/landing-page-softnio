@@ -1,0 +1,11 @@
+/* to change the antd's place holder color */
+input::placeholder,
+textarea::placeholder,
+.ant-picker-input::placeholder {
+  color: white !important; 
+}
+
+/* to change the color antd's picker icon */
+.ant-picker-suffix {
+  color: white !important; 
+}
