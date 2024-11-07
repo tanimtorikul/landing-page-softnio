@@ -26,7 +26,7 @@ const ServiceOverview = () => {
       <div className="flex flex-col lg:flex-row gap-8">
         {/* each service overview */}
         {services.map((service, index) => (
-          <div key={index} className="flex gap-4 items-center justify-center w-full">
+          <div key={index} className="flex gap-4 items-center  lg:justify-start w-full">
             <div className="shadow-icon w-[90px] h-[90px] flex items-center justify-center bg-white rounded-full p-6 hover:shadow-2xl transition-all duration-300 ease-in-out">
               {service.icon}
             </div>

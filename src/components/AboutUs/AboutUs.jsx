@@ -1,7 +1,7 @@
 import aboutImg from "../../assets/aboutimg.jpeg";
 import Tabs from "./Tabs";
 import ServiceOverview from "./ServiceOverview";
-import bgimage1 from "../../assets/about-bg.png";
+import bgimage1 from "../../assets/bg-img.png";
 
 const AboutUs = () => {
   const tabs = [
@@ -35,7 +35,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="py-12 relative overflow-hidden">
+    <div className="py-12 relative overflow-hidden px-4">
       {/* background image */}
       <img
         src={bgimage1}
@@ -43,8 +43,8 @@ const AboutUs = () => {
         className="absolute w-60 right-0 bottom-56 lg:transform lg:translate-x-[60%] -rotate-45 hidden lg:block"
         style={{ objectFit: "cover" }}
       />
-      <div className="max-w-container mx-auto ">
-        <div className="flex flex-col lg:flex-row gap-8 px-4 py-12">
+      <div className="max-w-container mx-auto">
+        <div className="flex flex-col lg:flex-row gap-8  py-12">
           {/* left side img */}
           <div className="w-full lg:w-1/2 relative">
             <img

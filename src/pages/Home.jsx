@@ -1,17 +1,17 @@
 import AboutUs from "../components/AboutUs/AboutUs";
 import Header from "../components/Header/Header";
-import bgimage1 from '../assets/about-bg.png'
+import PopularFood from "../components/PopularFood/PopularFood";
 
 const Home = () => {
   return (
     <div>
       <Header />
-      
-     
-        <div>
-          <AboutUs />
-        </div>
+
+      <div>
+        <AboutUs />
+        <PopularFood />
       </div>
+    </div>
   );
 };
 
