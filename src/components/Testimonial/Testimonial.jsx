@@ -18,18 +18,15 @@ const Testimonial = () => {
     });
   };
 
-  // prev
+  // to go to the prev
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => {
-      const prevIndexWrap =
-        (prevIndex - 1 + testimonials.length) % testimonials.length;
-      return prevIndexWrap;
-    });
+    const totalSlides = Math.ceil(testimonials.length / 4);
+    setCurrentIndex((prevIndex) => (prevIndex - 1) % totalSlides);
   };
 
   //auto play after 2 seconds using setIntercal function
   useEffect(() => {
-    const interval = setInterval(nextSlide, 2000);
+    const interval = setInterval(nextSlide, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -37,17 +34,18 @@ const Testimonial = () => {
   const duplocateTestimonials = [...testimonials, ...testimonials];
 
   return (
-    <div className="bg-[#FBF7F2] h-screen py-16 relative overflow-hidden">
+    <div className="bg-[#FBF7F2] lg:min-h-screen py-8 lg:py-30 relative overflow-hidden">
+      {/* 2 bg images for lg screen */}
       <img
         src={testimonialbg}
         alt="Background"
-        className="absolute w-96 left-[-12rem] top-72 transform -translate-y-1/2 -rotate-90 hidden lg:block"
+        className="absolute w-96 left-[-12rem] top-96 transform -translate-y-1/2 -rotate-90 hidden lg:block"
         style={{ objectFit: "cover" }}
       />
       <img
         src={testimonialbg2}
         alt="Background"
-        className="absolute w-[28rem] right-[-6rem] bottom-10 transform -translate-y-1/2 rotate-[30deg] hidden lg:block"
+        className="absolute w-[28rem] right-[-6rem] bottom-24 transform -translate-y-1/2 rotate-[30deg] hidden lg:block"
         style={{ objectFit: "cover" }}
       />
       <div className="max-w-container mx-auto px-8 md:px-8 lg:px-0">
@@ -76,7 +74,7 @@ const Testimonial = () => {
         {/* slider for testimonial */}
         <Slider currentIndex={currentIndex}>
           {duplocateTestimonials.map((testimonial, id) => (
-            <div key={id} className="flex-shrink-0 w-full ">
+            <div key={id} className="flex-shrink-0 w-full py-6">
               <TestimonialCard testimonial={testimonial} />
             </div>
           ))}
@@ -87,13 +85,13 @@ const Testimonial = () => {
         <div className="flex justify-center space-x-4 mt-6 lg:hidden">
           <button
             onClick={prevSlide}
-            className="bg-white text-[#0A1425] p-3 rounded-full hover:bg-secondary transition duration-300"
+            className="bg-white text-[#0A1425] p-3 rounded-full hover:text-secondary transition duration-300"
           >
             <FaChevronLeft />
           </button>
           <button
             onClick={nextSlide}
-            className="bg-white text-secondary p-3 rounded-full hover:bg-primary transition duration-300"
+            className="bg-white text-[#0A1425] p-3 rounded-full hover:text-secondary transition duration-300"
           >
             <FaChevronRight />
           </button>

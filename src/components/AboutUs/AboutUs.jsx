@@ -2,6 +2,7 @@ import aboutImg from "../../assets/aboutimg.jpeg";
 import Tabs from "./Tabs";
 import ServiceOverview from "./ServiceOverview";
 import bgimage1 from "../../assets/bg-img.png";
+import Ellipse from "../../assets/Ellipse";
 
 const AboutUs = () => {
   const tabs = [
@@ -35,7 +36,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="py-12 relative overflow-hidden px-8">
+    <div className="py-12 lg:py-30 relative overflow-hidden px-8 lg:px-0">
       {/* background image */}
       <img
         src={bgimage1}
@@ -44,20 +45,23 @@ const AboutUs = () => {
         style={{ objectFit: "cover" }}
       />
       <div className="max-w-container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-12 py-12">
+        <div className="flex flex-col lg:flex-row gap-12">
           {/* left side img */}
           <div className="w-full lg:w-1/2 relative">
             <img
               src={aboutImg}
               alt="About Us"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover lg:scale-105"
             />
             {/* stats */}
-            <div className="flex items-center gap-2 absolute top-10 left-10 bg-white text-black py-4 px-6 rounded-[20px] shadow-shadow">
-              <div className="w-16 h-16 bg-white border-4 border-primary rounded-full flex items-center justify-center">
-                <span className="text-xl font-bold">50+</span>
+            <div className="flex items-center gap-2 absolute top-6 lg:top-6 left-6 lg:left-4 bg-white text-black py-4 px-3 lg:py-4 lg:px-5 rounded-[20px] shadow-shadow">
+              <div className="relative">
+                <Ellipse className="w-12 h-12 lg:w-20 lg:h-20 text-primary flex items-center justify-center absolute inset-0" />
+                <span className="text-sm lg:text-[26px] font-bold absolute inset-0 flex items-center justify-center">
+                  50+
+                </span>
               </div>
-              <div className="font-semibold">
+              <div className="font-semibold text-[10px] font-openSans lg:text-base">
                 <h2>Market</h2>
                 <h2>Experiences</h2>
               </div>

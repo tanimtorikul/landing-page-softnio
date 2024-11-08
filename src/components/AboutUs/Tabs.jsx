@@ -11,7 +11,7 @@ const Tabs = ({ tabs }) => {
         {tabs.map((tab) => (
           <button
             key={tab.label}
-            className={`text-sm font-medium px-8 py-2 ${
+            className={`text-sm font-medium px-4 py-2 ${
               activeTab === tab.label
                 ? "text-white bg-secondary"
                 : "text-black bg-white"

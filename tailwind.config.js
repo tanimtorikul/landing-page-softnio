@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         primary: "#FEBF00",
-        secondary: "#B52B1D",
+        secondary: "#BD1F17",
         tertiary: "#BD1F17",
         "text-primary": "#181818",
       },
@@ -14,6 +14,8 @@ export default {
         display: ["Bebas Neue", "cursive"],
         poppins: ["Poppins", "sans-serif"],
         raleway: ["Raleway", "sans-serif"],
+        openSans: ["Open Sans", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       maxWidth: {
         container: "1320px",
@@ -23,8 +25,13 @@ export default {
         icon: "0px 7px 16px 0px rgba(0, 0, 0, 0.1)",
       },
       fontSize: {
-        '4xl': '40px',
-        '6xl': '62px', 
+        "4xl": "40px",
+        "6xl": "62px",
+        "9xl": "120px",
+      },
+      spacing: {
+        8: "30px", 
+        30:"120px"
       },
     },
   },

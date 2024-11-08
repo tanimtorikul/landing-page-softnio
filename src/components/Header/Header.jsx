@@ -8,7 +8,8 @@ const Header = () => {
       {/* bg image overlay */}
       <div
         className="absolute inset-0 bg-repeat bg-center opacity-10"
-        style={{ backgroundImage: `url(${bgheader})` }}
+        style={{  backgroundImage: `url(${bgheader})`,
+        backgroundSize: "8%", }}
       ></div>
 
       <div className="relative max-w-container mx-auto flex flex-col min-h-screen">

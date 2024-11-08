@@ -15,19 +15,21 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center px-8 lg:px-0 py-8">
+    <div className="flex justify-between items-center px-8 lg:px-0 py-5 lg:py-8">
       {/* left navbar, logo and links */}
-      <div className="flex items-center gap-10">
+      <div className="flex items-center gap-[60px]">
+        {/* logo and text */}
         <div className="flex items-center gap-1">
           <NavIcon />
           <h2 className="text-white font-poppins text-3xl">Restaurant</h2>
         </div>
+        {/* navlinks */}
         <div className="hidden lg:flex gap-10">
           {navLinks.map((link, index) => (
             <a
               key={index}
               href={link.href}
-              className="text-white hover:text-primary font-raleway"
+              className="text-white text-sm font-medium hover:text-primary font-raleway"
             >
               {link.label}
             </a>

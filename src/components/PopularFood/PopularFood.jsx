@@ -25,15 +25,15 @@ const PopularFood = () => {
   };
   //auto play after 2 seconds using setIntercal function
   useEffect(() => {
-    const interval = setInterval(nextSlide, 2000);
+    const interval = setInterval(nextSlide, 4000);
     return () => clearInterval(interval);
   }, []);
 
   // duplicate the food items
   const duplicatedFoods = [...foods, ...foods];
   return (
-    <div className="bg-[#FBF7F2] lg:h-[70vh] py-16 relative overflow-hidden">
-      {/* background img */}
+    <div className="bg-[#FBF7F2] lg:h-[70vh] py-8 lg:py-30 relative overflow-hidden">
+      {/* background img in lg device */}
       <img
         src={bgimage1}
         alt="Background"
@@ -77,13 +77,13 @@ const PopularFood = () => {
         <div className="flex justify-center space-x-4 mt-6 lg:hidden">
           <button
             onClick={prevSlide}
-            className="bg-white text-[#0A1425] p-3 rounded-full hover:bg-secondary transition duration-300"
+            className="bg-white text-[#0A1425] p-3 rounded-full hover:text-secondary transition duration-300"
           >
             <FaChevronLeft />
           </button>
           <button
             onClick={nextSlide}
-            className="bg-white text-secondary p-3 rounded-full hover:bg-primary transition duration-300"
+            className="bg-white text-[#0A1425] p-3 rounded-full hover:text-secondary transition duration-300"
           >
             <FaChevronRight />
           </button>
