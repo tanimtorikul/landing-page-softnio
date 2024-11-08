@@ -25,9 +25,8 @@ const Slider = ({ children, currentIndex }) => {
       <div
         className="flex transition-transform duration-500 ease-in-out"
         style={{
-          // if large screen move by 25%, otherwise move 100% in sm device
           transform: `translateX(-${
-            currentIndex * (isLargeScreen ? 25 : 100)
+            currentIndex * (isLargeScreen ? 100 : 100)
           }%)`,
         }}
       >

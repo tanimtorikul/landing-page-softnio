@@ -12,8 +12,10 @@ const PopularFood = () => {
 
   // to go to the next slide, 4 items at a time
   const nextSlide = () => {
-    const totalSlides = Math.ceil(foods.length / 4);
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+    setCurrentIndex((prevIndex) => {
+      const nextIndex = (prevIndex + 1) % foods.length;
+      return nextIndex;
+    });
   };
 
   // to go to the prev slide, 4 items at a time

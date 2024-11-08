@@ -4,7 +4,7 @@ import BackgroundFlower from "../../assets/BackgroundFlower";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-4 lg:gap-10 items-center justify-between max-w-container mx-auto px-8 py-12 relative">
+    <div className="flex flex-col lg:flex-row gap-4 lg:gap-10 items-center justify-between px-8 lg:px-0 py-12 relative">
       {/* background flower image */}
       <div className="absolute top-72 lg:top-3 right-6 lg:right-4 translate-x-2">
         <BackgroundFlower className="w-32 h-auto" />
@@ -32,17 +32,16 @@ const Hero = () => {
           alt="Hero"
           className="w-full h-auto object-cover shadow-lg"
         />
-
-        {/* circled today's offer */}
-        <div className="absolute bottom-20 right-20 lg:bottom-10 lg:right-0 translate-x-14 translate-y-12 flex items-center justify-center w-16 h-16 lg:w-28 lg:h-28 bg-primary rounded-full">
-          {/* border */}
-          <p className="absolute w-full h-full border-2 border-dashed border-secondary rounded-full"></p>
-          {/* texts of the circled */}
-          <div className="w-full h-full flex flex-col items-center justify-center">
-            <h2 className="font-display lg:text-[36px] text-black text-center leading-none">
-              Today <br />
-              Offer
-            </h2>
+        {/* todays offer circled container */}
+        <div className="absolute bottom-20 right-20 lg:bottom-10 lg:right-0 translate-x-14 translate-y-12 flex items-center justify-center w-20 h-20 lg:w-32 lg:h-32 bg-primary rounded-full p-2">
+          <div className="flex items-center justify-center w-full h-full border-2 border-dashed border-secondary rounded-full">
+            {/* inner content */}
+            <div className="flex flex-col items-center justify-center w-full h-full">
+              <h2 className="font-display lg:text-[36px] text-black text-center leading-none">
+                Today <br />
+                Offer
+              </h2>
+            </div>
           </div>
         </div>
       </div>

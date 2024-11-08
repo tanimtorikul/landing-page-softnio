@@ -44,7 +44,7 @@ const AboutUs = () => {
         style={{ objectFit: "cover" }}
       />
       <div className="max-w-container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-8  py-12">
+        <div className="flex flex-col lg:flex-row gap-12 py-12">
           {/* left side img */}
           <div className="w-full lg:w-1/2 relative">
             <img
@@ -65,7 +65,7 @@ const AboutUs = () => {
           </div>
 
           {/* right side, tabs */}
-          <div className="w-full lg:w-1/2 lg:pl-8">
+          <div className="w-full lg:w-1/2">
             <Tabs tabs={tabs} />
           </div>
         </div>

@@ -1,15 +1,24 @@
-import Hero from '../Hero/Hero';
-import Navbar from '../Navbar/Navbar';
+import Hero from "../Hero/Hero";
+import Navbar from "../Navbar/Navbar";
+import bgheader from "../../assets/bg-header.png";
 
 const Header = () => {
-    return (
-        <div className="bg-secondary text-white min-h-[90vh]">
-           <div className='max-w-container mx-auto'>
-               <Navbar />
-               <Hero />
-           </div>
+  return (
+    <div className="relative bg-secondary text-white min-h-screen">
+      {/* bg image overlay */}
+      <div
+        className="absolute inset-0 bg-repeat bg-center opacity-10"
+        style={{ backgroundImage: `url(${bgheader})` }}
+      ></div>
+
+      <div className="relative max-w-container mx-auto flex flex-col min-h-screen">
+        <Navbar />
+        <div className="flex-grow flex items-center">
+          <Hero />
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Header;

@@ -15,14 +15,14 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center px-8 py-4">
+    <div className="flex justify-between items-center px-8 lg:px-0 py-8">
       {/* left navbar, logo and links */}
       <div className="flex items-center gap-10">
         <div className="flex items-center gap-1">
           <NavIcon />
           <h2 className="text-white font-poppins text-3xl">Restaurant</h2>
         </div>
-        <div className="hidden lg:flex space-x-12">
+        <div className="hidden lg:flex gap-10">
           {navLinks.map((link, index) => (
             <a
               key={index}
