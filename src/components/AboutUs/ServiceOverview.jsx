@@ -22,7 +22,7 @@ const services = [
 
 const ServiceOverview = () => {
   return (
-    <div className="py-12">
+    <div className="py-[50px] lg:py-[74px]">
       <div className="flex flex-col lg:flex-row gap-8">
         {/* each service overview */}
         {services.map((service, index) => (

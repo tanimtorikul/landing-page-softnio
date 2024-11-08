@@ -1,116 +1,97 @@
 [
-    {
-      "title": "Cuisine Chicken",
-      "description": "Crispy and golden fries",
-      "image": "https://i.ibb.co.com/F5fCG85/fry.jpg"
-    },
-    {
-      "title": "Vegetables Burger",
-      "description": "Juicy burger with fresh vegetables",
-      "image": "https://i.ibb.co.com/0QH1w8w/burger.jpg"
-    },
-    {
-      "title": "Special French Fries",
-      "description": "Classic French fries, a beloved treat",
-      "image": "https://i.ibb.co.com/FKFxpgD/french.jpg"
-    },
-    {
-      "title": "Special Pizza",
-      "description": "Deliciously cheesy pizza",
-      "image": "https://i.ibb.co.com/hfhv3Qw/pizza.png"
-    },
-    {
-      "title": "Vegetables Burger",
-      "description": "Juicy burger with fresh vegetables",
-      "image": "https://i.ibb.co.com/0QH1w8w/burger.jpg"
-    },
-    {
-      "title": "Special French Fries",
-      "description": "Classic French fries, a beloved treat",
-      "image": "https://i.ibb.co.com/FKFxpgD/french.jpg"
-    },
-  
-    {
-      "title": "Special Pizza",
-      "description": "Deliciously cheesy pizza",
-      "image": "https://i.ibb.co.com/hfhv3Qw/pizza.png"
-    },
-    {
-      "title": "Vegetables Burger",
-      "description": "Juicy burger with fresh vegetables",
-      "image": "https://i.ibb.co.com/0QH1w8w/burger.jpg"
-    },
-    {
-      "title": "Special French Fries",
-      "description": "Classic French fries, a beloved treat",
-      "image": "https://i.ibb.co.com/FKFxpgD/french.jpg"
-    }
-    ,
-    {
-      "title": "Special Pizza",
-      "description": "Deliciously cheesy pizza",
-      "image": "https://i.ibb.co.com/hfhv3Qw/pizza.png"
-    },
-    {
-      "title": "Vegetables Burger",
-      "description": "Juicy burger with fresh vegetables",
-      "image": "https://i.ibb.co.com/0QH1w8w/burger.jpg"
-    },
-    {
-      "title": "Special French Fries",
-      "description": "Classic French fries, a beloved treat",
-      "image": "https://i.ibb.co.com/FKFxpgD/french.jpg"
-    },
-    {
-      "title": "Special Pizza",
-      "description": "Deliciously cheesy pizza",
-      "image": "https://i.ibb.co.com/hfhv3Qw/pizza.png"
-    },
-    {
-      "title": "Vegetables Burger",
-      "description": "Juicy burger with fresh vegetables",
-      "image": "https://i.ibb.co.com/0QH1w8w/burger.jpg"
-    },
-    {
-      "title": "Special French Fries",
-      "description": "Classic French fries, a beloved treat",
-      "image": "https://i.ibb.co.com/FKFxpgD/french.jpg"
-    },
-    {
-      "title": "Special Pizza",
-      "description": "Deliciously cheesy pizza",
-      "image": "https://i.ibb.co.com/hfhv3Qw/pizza.png"
-    },
-    {
-      "title": "Vegetables Burger",
-      "description": "Juicy burger with fresh vegetables",
-      "image": "https://i.ibb.co.com/0QH1w8w/burger.jpg"
-    },
-    {
-      "title": "Special French Fries",
-      "description": "Classic French fries, a beloved treat",
-      "image": "https://i.ibb.co.com/FKFxpgD/french.jpg"
-    },
-    {
-      "title": "Special Pizza",
-      "description": "Deliciously cheesy pizza",
-      "image": "https://i.ibb.co.com/hfhv3Qw/pizza.png"
-    },
-    {
-      "title": "Vegetables Burger",
-      "description": "Juicy burger with fresh vegetables",
-      "image": "https://i.ibb.co.com/0QH1w8w/burger.jpg"
-    },
-    {
-      "title": "Special French Fries",
-      "description": "Classic French fries, a beloved treat",
-      "image": "https://i.ibb.co.com/FKFxpgD/french.jpg"
-    },
-    {
-      "title": "Special Pizza",
-      "description": "Deliciously cheesy pizza",
-      "image": "https://i.ibb.co.com/hfhv3Qw/pizza.png"
-    }
-  
-  ]
-  
+  {
+    "title": "Cuisine Chicken",
+    "description": "Crispy and golden fries",
+    "image": "https://i.ibb.co.com/Ct3yN0N/jpeg-optimizer-fry.jpg"
+  },
+  {
+    "title": "Vegetables Burger",
+    "description": "Juicy burger with fresh vegetables",
+    "image": "https://i.ibb.co.com/47f0PTW/jpeg-optimizer-burger.jpg"
+  },
+  {
+    "title": "Special French Fries",
+    "description": "Classic French fries, a beloved treat",
+    "image": "https://i.ibb.co.com/VCRrQpG/jpeg-optimizer-french.jpg"
+  },
+  {
+    "title": "Special Pizza",
+    "description": "Deliciously cheesy pizza",
+    "image": "https://i.ibb.co.com/hfhv3Qw/pizza.png"
+  },
+  {
+    "title": "Vegetables Burger",
+    "description": "Juicy burger with fresh vegetables",
+    "image": "https://i.ibb.co.com/47f0PTW/jpeg-optimizer-burger.jpg"
+  },
+  {
+    "title": "Special French Fries",
+    "description": "Classic French fries, a beloved treat",
+    "image": "https://i.ibb.co.com/VCRrQpG/jpeg-optimizer-french.jpg"
+  },
+  {
+    "title": "Special Pizza",
+    "description": "Deliciously cheesy pizza",
+    "image": "https://i.ibb.co.com/hfhv3Qw/pizza.png"
+  },
+  {
+    "title": "Vegetables Burger",
+    "description": "Juicy burger with fresh vegetables",
+    "image": "https://i.ibb.co.com/47f0PTW/jpeg-optimizer-burger.jpg"
+  },
+  {
+    "title": "Special French Fries",
+    "description": "Classic French fries, a beloved treat",
+    "image": "https://i.ibb.co.com/VCRrQpG/jpeg-optimizer-french.jpg"
+  },
+  {
+    "title": "Special Pizza",
+    "description": "Deliciously cheesy pizza",
+    "image": "https://i.ibb.co.com/hfhv3Qw/pizza.png"
+  },
+  {
+    "title": "Vegetables Burger",
+    "description": "Juicy burger with fresh vegetables",
+    "image": "https://i.ibb.co.com/47f0PTW/jpeg-optimizer-burger.jpg"
+  },
+  {
+    "title": "Special French Fries",
+    "description": "Classic French fries, a beloved treat",
+    "image": "https://i.ibb.co.com/VCRrQpG/jpeg-optimizer-french.jpg"
+  },
+  {
+    "title": "Special Pizza",
+    "description": "Deliciously cheesy pizza",
+    "image": "https://i.ibb.co.com/hfhv3Qw/pizza.png"
+  },
+  {
+    "title": "Vegetables Burger",
+    "description": "Juicy burger with fresh vegetables",
+    "image": "https://i.ibb.co.com/47f0PTW/jpeg-optimizer-burger.jpg"
+  },
+  {
+    "title": "Special French Fries",
+    "description": "Classic French fries, a beloved treat",
+    "image": "https://i.ibb.co.com/VCRrQpG/jpeg-optimizer-french.jpg"
+  },
+  {
+    "title": "Special Pizza",
+    "description": "Deliciously cheesy pizza",
+    "image": "https://i.ibb.co.com/hfhv3Qw/pizza.png"
+  },
+  {
+    "title": "Vegetables Burger",
+    "description": "Juicy burger with fresh vegetables",
+    "image": "https://i.ibb.co.com/47f0PTW/jpeg-optimizer-burger.jpg"
+  },
+  {
+    "title": "Special French Fries",
+    "description": "Classic French fries, a beloved treat",
+    "image": "https://i.ibb.co.com/VCRrQpG/jpeg-optimizer-french.jpg"
+  },
+  {
+    "title": "Special Pizza",
+    "description": "Deliciously cheesy pizza",
+    "image": "https://i.ibb.co.com/hfhv3Qw/pizza.png"
+  }
+]

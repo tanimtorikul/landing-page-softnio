@@ -32,7 +32,7 @@ const PopularFood = () => {
   // duplicate the food items
   const duplicatedFoods = [...foods, ...foods];
   return (
-    <div className="bg-[#FBF7F2] lg:h-[70vh] py-8 lg:py-30 relative overflow-hidden">
+    <div className="bg-[#FBF7F2] py-8 lg:py-30 relative overflow-hidden">
       {/* background img in lg device */}
       <img
         src={bgimage1}
