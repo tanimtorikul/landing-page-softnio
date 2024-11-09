@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "../common/Button";
+import ContactIcon from "../../assets/ContactIcon";
 
 const Tabs = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(tabs[0]?.label);
@@ -46,8 +47,18 @@ const Tabs = ({ tabs }) => {
         {tabs.map(
           (tab) =>
             tab.label === activeTab && (
-              <div key={`button-${tab.label}`} className="mt-4">
+              <div
+                key={`button-${tab.label}`}
+                className="mt-4 flex items-center gap-4 lg:gap-8"
+              >
                 <Button text={tab.buttonText} />
+
+                <div className="flex items-center gap-2">
+                  <ContactIcon />
+                  <span className="text-sm lg:text-lg font-bold text-text-primary">
+                    +88 3426 739 485
+                  </span>
+                </div>
               </div>
             )
         )}

@@ -124,7 +124,7 @@ const BookingForm = () => {
                     message: "People count must be at least 1",
                   },
                 })}
-                className="w-full px-4 py-2 border bg-transparent text-sm text-white"
+                className="w-full px-4 py-2 h-10 border bg-transparent text-sm text-white box-border"
                 min="1"
                 step="1"
                 inputMode="numeric"

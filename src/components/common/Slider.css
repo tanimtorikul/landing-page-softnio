@@ -1,12 +1,12 @@
-/* Add to your CSS file */
-.swiper-button-next, .swiper-button-prev {
-    background-color: #000; /* Black background for buttons */
-    color: #fff; /* White arrow icons */
-    padding: 8px;
-    border-radius: 50%;
-  }
-  
-  .swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 20px; /* Adjust arrow size */
-  }
-  
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+}

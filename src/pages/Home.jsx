@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Header />
-
+      {/* added id to navigate through href */}
       <div id="about">
         <AboutUs />
       </div>
