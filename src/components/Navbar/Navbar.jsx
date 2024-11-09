@@ -33,6 +33,7 @@ const Navbar = () => {
               key={index}
               href={link.href}
               className="text-white text-sm font-medium hover:text-primary font-raleway"
+              onClick={() => setMenuOpen(false)}
             >
               {link.label}
             </a>
@@ -65,6 +66,7 @@ const Navbar = () => {
               key={index}
               href={link.href}
               className="text-black text-sm font-medium hover:text-primary font-raleway text-center"
+              onClick={() => setMenuOpen(false)}
             >
               {link.label}
             </a>

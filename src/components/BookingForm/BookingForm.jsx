@@ -113,30 +113,22 @@ const BookingForm = () => {
               </div>
 
               {/* people field */}
-              <div>
-                <input
-                  id="people"
-                  type="number"
-                  placeholder="People"
-                  {...control.register("people", {
-                    required: "People count is required",
-                    min: {
-                      value: 1,
-                      message: "People count must be at least 1",
-                    },
-                    max: {
-                      value: 100,
-                      message: "Max 100 people allowed",
-                    },
-                  })}
-                  className="w-full px-4 py-2 border bg-transparent text-sm text-white"
-                />
-                {errors.people && (
-                  <p className="text-red-500 text-sm">
-                    {errors.people.message}
-                  </p>
-                )}
-              </div>
+              <input
+                id="people"
+                type="number"
+                placeholder="People"
+                {...control.register("people", {
+                  required: "People count is required",
+                  min: {
+                    value: 1,
+                    message: "People count must be at least 1",
+                  },
+                })}
+                className="w-full px-4 py-2 border bg-transparent text-sm text-white"
+                min="1"
+                step="1"
+                inputMode="numeric"
+              />
             </div>
 
             {/* text area msg */}
