@@ -1,8 +1,26 @@
-# React + Vite
+# Softnio Landing Page Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Preview
 
-Currently, two official plugins are available:
+You can view the live version of this project by clicking the link below:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live Preview: https://landing-page-softnio.vercel.app/
+
+## Technologies Used
+
+- **React**: I have used ReactJS for user interface.
+- **Tailwind CSS**: For styling.
+- **Ant Design**: I have used it specifically for the Date Picker component and Modal after the booking form is confirmed.
+- **React Icons**: I didn't use much of it, mostly tried to use SVG icons made in JSX for better performance, but in some places, I used it.
+- **React Hook Form**: Used for form validation to handle the booking form.
+
+## Slider Carousel
+
+A custom slider carousel for the popular food and testimonial section without using any libraries. This allows for smoother performance and more flexibility in customization. The carousel is fully functional and integrates seamlessly with the design.
+
+## Features
+
+- **Booking Form**: The form is fully functional with validation and a confirmation modal, ensuring a smooth user experience.
+- **Tailwind Config**: I have kept the most used styles in the Tailwind config for better maintainability and efficiency.
+- **Navbar**: The navbar is sticky, making navigation easy even when scrolling and navbar menubar is also responsive in small device.
+- **Image Loading**: I attempted to make the images smaller and used an image CDN for faster loading. However, some images still take time to load, so please wait until the loading is fully complete.
