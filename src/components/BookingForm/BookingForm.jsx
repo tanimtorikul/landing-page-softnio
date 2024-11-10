@@ -51,70 +51,62 @@ const BookingForm = () => {
         {/* Form */}
         <div className="w-full lg:w-1/2 py-6">
           <form onSubmit={handleSubmit(onSubmit)}>
-            {/* name and email */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
               {/* name */}
-              <div>
-                <input
-                  id="name"
-                  type="text"
-                  placeholder="Your Name"
-                  {...control.register("name", {
-                    required: "Name is required",
-                  })}
-                  className="w-full px-4 py-2 border bg-transparent text-sm text-white"
-                />
-                {errors.name && (
-                  <p className="text-red-500 text-sm">{errors.name.message}</p>
-                )}
-              </div>
+              <input
+                type="text"
+                placeholder="Your Name"
+                {...control.register("name", {
+                  required: "Name is required",
+                })}
+                name="name"
+                className="w-full px-4 py-2 border bg-transparent text-sm text-white"
+              />
+              {errors.name && (
+                <p className="text-red-500 text-sm">{errors.name.message}</p>
+              )}
 
               {/* email */}
-              <div>
-                <input
-                  id="email"
-                  type="email"
-                  placeholder="Your Email"
-                  {...control.register("email", {
-                    required: "Email is required",
-                    pattern: {
-                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                      message: "Invalid email address",
-                    },
-                  })}
-                  className="w-full px-4 py-2 border bg-transparent text-sm text-white"
-                />
-                {errors.email && (
-                  <p className="text-red-500 text-sm">{errors.email.message}</p>
-                )}
-              </div>
+              <input
+                type="email"
+                placeholder="Your Email"
+                {...control.register("email", {
+                  required: "Email is required",
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[hA-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                    message: "Invalid email address",
+                  },
+                })}
+                name="email"
+                className="w-full px-4 py-2 border bg-transparent text-sm text-white"
+              />
+              {errors.email && (
+                <p className="text-red-500 text-sm">{errors.email.message}</p>
+              )}
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
-              {/* Date Picker using antd */}
-              <div className="mb-4">
-                <Controller
-                  name="date"
-                  control={control}
-                  defaultValue={null}
-                  rules={{ required: "Date is required" }}
-                  render={({ field }) => (
-                    <DatePicker
-                      value={field.value}
-                      onChange={(date) => field.onChange(date)}
-                      placeholder="Select Reservation Date"
-                      className="w-full px-4 py-2 bg-transparent text-sm text-white rounded-none"
-                    />
-                  )}
-                />
-                {errors.date && (
-                  <p className="text-red-500 text-sm">{errors.date.message}</p>
+              {/* date picker */}
+              <Controller
+                name="date"
+                control={control}
+                defaultValue={null}
+                rules={{ required: "Date is required" }}
+                render={({ field }) => (
+                  <DatePicker
+                    value={field.value}
+                    onChange={(date) => field.onChange(date)}
+                    placeholder="Select Reservation Date"
+                    className="w-full px-4 py-2 bg-transparent text-sm text-white rounded-none"
+                  />
                 )}
-              </div>
+              />
+              {errors.date && (
+                <p className="text-red-500 text-sm">{errors.date.message}</p>
+              )}
 
-              {/* people field */}
+              {/* people */}
               <input
-                id="people"
                 type="number"
                 placeholder="People"
                 {...control.register("people", {
@@ -124,6 +116,7 @@ const BookingForm = () => {
                     message: "People count must be at least 1",
                   },
                 })}
+                name="people"
                 className="w-full px-4 py-2 h-10 border bg-transparent text-sm text-white box-border"
                 min="1"
                 step="1"
@@ -131,7 +124,7 @@ const BookingForm = () => {
               />
             </div>
 
-            {/* text area msg */}
+            {/* message */}
             <div className="mb-4">
               <textarea
                 placeholder="Message"
@@ -141,7 +134,7 @@ const BookingForm = () => {
               />
             </div>
 
-            {/* Submit btn*/}
+            {/* submit button */}
             <div className="mt-4">
               <Button
                 text={loading ? "Booking..." : "Book Now"}

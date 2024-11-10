@@ -28,7 +28,7 @@ const Hero = () => {
       {/* right div with increased width */}
       <div className="lg:w-[60%] flex justify-center relative">
         <img
-          src='https://i.ibb.co.com/3h0DfSw/hero-img.png'
+          src="https://i.ibb.co.com/PFcp0tL/hero-img.webp"
           alt="Hero"
           className="w-full h-auto object-cover shadow-lg"
         />
@@ -45,7 +45,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

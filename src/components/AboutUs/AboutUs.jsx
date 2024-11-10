@@ -1,7 +1,7 @@
 import aboutImg from "../../assets/aboutimg.jpeg";
 import Tabs from "./Tabs";
 import ServiceOverview from "./ServiceOverview";
-import bgimage1 from "../../assets/bg-img.png";
+import bgimage1 from "../../assets/bg-img.webp";
 import Ellipse from "../../assets/Ellipse";
 
 const AboutUs = () => {

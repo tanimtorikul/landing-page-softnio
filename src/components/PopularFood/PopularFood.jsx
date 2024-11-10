@@ -4,7 +4,7 @@ import FoodCard from "./FoodCard";
 import foods from "../../assets/foods.json";
 import Slider from "../common/Slider";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import bgimage1 from "../../assets/bg-img.png";
+import bgimage1 from "../../assets/bg-img.webp";
 
 const PopularFood = () => {
   // initial

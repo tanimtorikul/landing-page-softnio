@@ -2,7 +2,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import SectionTitle from "../common/SectionTitle";
 import { useEffect, useState } from "react";
 import testimonialbg from "../../assets/testimonial-bg.png";
-import testimonialbg2 from "../../assets/testimonial-bg2.png";
+import testimonialbg2 from "../../assets/testimonial-bg2.webp";
 import testimonials from "../../assets/testimonials.json";
 import Slider from "../common/Slider";
 import TestimonialCard from "./TestimonialCard";
