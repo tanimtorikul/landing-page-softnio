@@ -34,7 +34,7 @@ const ServiceOverview = () => {
               <h3 className="mt-2 font-display text-2xl lg:text-3xl">
                 {service.title}
               </h3>
-              <p className="text-lg lg:text-xl text-gray-600">
+              <p className="text-lg lg:text-xl text-text-primary font-inter lg:font-roboto">
                 {service.description}
               </p>
             </div>

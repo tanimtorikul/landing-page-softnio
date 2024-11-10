@@ -3,6 +3,7 @@ import Tabs from "./Tabs";
 import ServiceOverview from "./ServiceOverview";
 import bgimage1 from "../../assets/bg-img.webp";
 import Ellipse from "../../assets/Ellipse";
+import Ellipse2 from "../../assets/Ellipse2";
 
 const AboutUs = () => {
   const tabs = [
@@ -54,16 +55,25 @@ const AboutUs = () => {
               className="w-full h-auto object-cover lg:scale-105"
             />
             {/* stats */}
-            <div className="flex items-center gap-2 absolute top-6 lg:top-6 left-6 lg:left-4 bg-white text-black py-4 px-3 lg:py-4 lg:px-5 rounded-[20px] shadow-shadow">
-              <div className="relative">
-                <Ellipse className="w-12 h-12 lg:w-20 lg:h-20 text-primary flex items-center justify-center absolute inset-0" />
-                <span className="text-sm lg:text-[26px] font-bold absolute inset-0 flex items-center justify-center">
-                  50+
-                </span>
-              </div>
-              <div className="font-semibold text-[10px] font-openSans lg:text-base">
-                <h2>Market</h2>
-                <h2>Experiences</h2>
+            <div className="flex items-center gap-2 absolute top-6 lg:top-6 left-6 lg:left-4 bg-white text-black py-4 px-3 lg:py-6 lg:px-10 rounded-[20px] shadow-shadow">
+              <div className="relative z-10 flex gap-2 items-center">
+                {/* Ellipse */}
+                <div className="relative z-0 flex justify-center items-center">
+                  {/* main ellipse */}
+                  <Ellipse className="w-10 h-10 lg:w-20 lg:h-20 text-primary" />
+                  <span className="absolute text-sm lg:text-[26px] font-bold">
+                    50+
+                  </span>
+                </div>
+                {/* ellipse stroke */}
+                <div className="absolute bottom-9 lg:top-0 lg:left-0 transform translate-x-1 translate-y-2 z-0">
+                  <Ellipse2 className="w-2 h-2 lg:w-4 lg:h-4 text-primary" />
+                </div>
+
+                <div className="font-semibold text-[10px] font-openSans lg:text-base">
+                  <h2>Market</h2>
+                  <h2>Experiences</h2>
+                </div>
               </div>
             </div>
           </div>
