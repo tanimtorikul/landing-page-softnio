@@ -16,7 +16,7 @@ Live Preview: https://landing-page-softnio.vercel.app/
 
 ## Slider Carousel
 
-A custom slider carousel for the popular food and testimonial section without using any libraries or packages. This allows for smoother performance. The carousel is fully functional and integrates seamlessly with the design.
+A custom slider carousel for the popular food and testimonial section without using any libraries or packages. I did not use any slider/carousel libraries like swiperjs or others.
 
 ## Features
 

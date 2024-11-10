@@ -4,7 +4,7 @@ import bgheader from "../../assets/bg-header.png";
 
 const Header = () => {
   return (
-    <div className="relative bg-secondary text-white min-h-screen px-4">
+    <div className="relative bg-secondary text-white min-h-screen">
       {/* bg image overlay */}
       <div
         className="absolute inset-0 bg-repeat bg-center opacity-10"

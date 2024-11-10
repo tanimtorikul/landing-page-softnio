@@ -5,7 +5,7 @@ const TestimonialCard = ({ testimonial }) => {
     testimonial;
 
   return (
-    <div className="relative flex flex-col-reverse lg:flex-row lg:h-[70vh]">
+    <div className="relative flex flex-col-reverse g lg:flex-row lg:h-[70vh]">
       <div className="absolute bottom-0 left-0 lg:bottom-20">
         <Vector className="w-7 h-20 lg:w-10 lg:h-20" />
       </div>
@@ -13,7 +13,7 @@ const TestimonialCard = ({ testimonial }) => {
       <div className="lg:w-2/5 bg-primary p-4 lg:p-20 flex flex-col gap-12 lg:gap-[164px] justify-center">
         {/* review */}
         <h3 className="text-xl">
-          <div className="flex">
+          <div className="flex mt-6 lg:mt-0">
             <span className="text-6xl mr-2">“</span>
             <span>{review}</span>
           </div>
@@ -29,7 +29,7 @@ const TestimonialCard = ({ testimonial }) => {
             <img
               src={customerImg}
               alt={customerName}
-              className="w-9 h-9 rounded-full mb-4"
+              className="w-10 h-10 rounded-full mb-4"
             />
           </div>
         </div>
