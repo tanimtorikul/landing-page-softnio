@@ -3,7 +3,7 @@
     "id": 1,
     "customerName": "John Doe",
     "customerImg": "https://i.ibb.co.com/cwQxpgt/customer.webp",
-    "review": "Had an amazing experience at the restaurant! The service was outstanding, the staff was friendly, and the atmosphere was perfect. It felt like a home away from home. Highly recommended for anyone looking for a great dining experience!",
+    "review": "Had an amazing experience at the restaurant! The service was outstanding, the staff was friendly, and the atmosphere was perfect. Highly recommended for anyone looking for a great dining experience!",
     "address": "New York, USA",
     "youtubeVideo": "https://youtu.be/kRCH8kD1GD0?si=oH8YOwSwGD6NFZdX"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "customerName": "Jane Smith",
     "customerImg": "https://i.ibb.co.com/cwQxpgt/customer.webp",
-    "review": "The food was absolutely delicious, bursting with flavors! The ambiance of the restaurant was warm and inviting, making it a perfect spot for a casual night out. I'll definitely be coming back again to try more of their amazing dishes!",
+    "review": "The food was absolutely delicious, bursting with flavors! The ambiance of the restaurant was warm and inviting. I'll definitely be coming back again to try more of their amazing dishes!",
     "address": "London, UK",
     "youtubeVideo": "https://youtu.be/F3zw1Gvn4Mk?si=wPDxd4_mVqLt-KFA"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "customerName": "Jane Smith",
     "customerImg": "https://i.ibb.co.com/cwQxpgt/customer.webp",
-    "review": "What a fantastic dining experience! The food was cooked to perfection, and every bite was a treat. The ambiance was cozy and inviting, making it the perfect place for a date night. Can't wait to visit again!",
+    "review": "What a fantastic dining experience! The food was cooked to perfection, and every bite was a treat. The ambiance was inviting, making it the perfect place for a date night. Can't wait to visit again!",
     "address": "London, UK",
     "youtubeVideo": "https://youtu.be/kRCH8kD1GD0?si=oH8YOwSwGD6NFZdX"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "customerName": "Jane Smith",
     "customerImg": "https://i.ibb.co.com/cwQxpgt/customer.webp",
-    "review": "A wonderful place to dine! The atmosphere was intimate and relaxed, and the food was simply delicious. The staff was attentive, and I felt well taken care of. Highly recommend this place for anyone who loves great food and a cozy vibe.",
+    "review": "A wonderful place to dine! The atmosphere was intimate and relaxed, and the food was simply delicious. The staff was attentive,Highly recommend this place for anyone who loves great food and a cozy vibe.",
     "address": "London, UK",
     "youtubeVideo": "https://youtu.be/F3zw1Gvn4Mk?si=wPDxd4_mVqLt-KFA"
   },
