@@ -53,75 +53,97 @@ const BookingForm = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
               {/* name */}
-              <input
-                type="text"
-                placeholder="Your Name"
-                {...control.register("name", {
-                  required: "Name is required",
-                })}
-                name="name"
-                className="w-full px-4 py-2 border bg-transparent text-sm text-white"
-              />
-              {errors.name && (
-                <p className="text-red-500 text-sm">{errors.name.message}</p>
-              )}
+              <div className="flex flex-col">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  {...control.register("name", {
+                    required: "Name is required",
+                  })}
+                  name="name"
+                  className="w-full px-4 py-2 border bg-transparent text-sm text-white"
+                />
+                {errors.name && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors.name.message}
+                  </p>
+                )}
+              </div>
 
               {/* email */}
-              <input
-                type="email"
-                placeholder="Your Email"
-                {...control.register("email", {
-                  required: "Email is required",
-                  pattern: {
-                    value: /^[A-Z0-9._%+-]+@[hA-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                    message: "Invalid email address",
-                  },
-                })}
-                name="email"
-                className="w-full px-4 py-2 border bg-transparent text-sm text-white"
-              />
-              {errors.email && (
-                <p className="text-red-500 text-sm">{errors.email.message}</p>
-              )}
+              <div className="flex flex-col">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  {...control.register("email", {
+                    required: "Email is required",
+                    pattern: {
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                      message: "Invalid email address",
+                    },
+                  })}
+                  name="email"
+                  className="w-full px-4 py-2 border bg-transparent text-sm text-white"
+                />
+                {errors.email && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors.email.message}
+                  </p>
+                )}
+              </div>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
               {/* date picker */}
-              <Controller
-                name="date"
-                control={control}
-                defaultValue={null}
-                rules={{ required: "Date is required" }}
-                render={({ field }) => (
-                  <DatePicker
-                    value={field.value}
-                    onChange={(date) => field.onChange(date)}
-                    placeholder="Select Reservation Date"
-                    className="w-full px-4 py-2 bg-transparent text-sm text-white rounded-none"
-                  />
+              <div className="flex flex-col">
+                <Controller
+                  name="date"
+                  control={control}
+                  defaultValue={null}
+                  rules={{ required: "Date is required" }}
+                  render={({ field }) => (
+                    <DatePicker
+                      value={field.value}
+                      onChange={(date) => field.onChange(date)}
+                      placeholder="Select Reservation Date"
+                      className="w-full px-4 py-2 bg-transparent text-sm text-white rounded-none"
+                      disabledDate={(current) =>
+                        current && current.valueOf() < Date.now()
+                      }
+                    />
+                  )}
+                />
+                {errors.date && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors.date.message}
+                  </p>
                 )}
-              />
-              {errors.date && (
-                <p className="text-red-500 text-sm">{errors.date.message}</p>
-              )}
+              </div>
 
               {/* people */}
-              <input
-                type="number"
-                placeholder="People"
-                {...control.register("people", {
-                  required: "People count is required",
-                  min: {
-                    value: 1,
-                    message: "People count must be at least 1",
-                  },
-                })}
-                name="people"
-                className="w-full px-4 py-2 h-10 border bg-transparent text-sm text-white box-border"
-                min="1"
-                step="1"
-                inputMode="numeric"
-              />
+              <div className="flex flex-col">
+                <input
+                  type="number"
+                  placeholder="People"
+                  {...control.register("people", {
+                    required: "People count is required",
+                    min: {
+                      value: 1,
+                      message: "People count must be at least 1",
+                    },
+                  })}
+                  name="people"
+                  className="w-full px-4 py-2 h-10 border bg-transparent text-sm text-white box-border"
+                  min="1"
+                  step="1"
+                  inputMode="numeric"
+                />
+                {errors.people && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors.people.message}
+                  </p>
+                )}
+              </div>
             </div>
 
             {/* message */}
