@@ -9,19 +9,24 @@ import bgimage1 from "../../assets/bg-img.webp";
 const PopularFood = () => {
   // initial
   const [currentIndex, setCurrentIndex] = useState(0);
+  const itemsPerSlide = 4;
+
+  const totalSlides = Math.ceil(foods.length / itemsPerSlide);
 
   // to go to the next slide, 4 items at a time
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => {
-      const nextIndex = (prevIndex + 1) % foods.length;
+      const nextIndex = (prevIndex + 1) % totalSlides;
       return nextIndex;
     });
   };
 
   // to go to the prev slide, 4 items at a time
   const prevSlide = () => {
-    const totalSlides = Math.ceil(foods.length / 4);
-    setCurrentIndex((prevIndex) => (prevIndex - 1) % totalSlides);
+    setCurrentIndex((prevIndex) => {
+      const nextIndex = (prevIndex - 1 + totalSlides) % totalSlides;
+      return nextIndex;
+    });
   };
 
   // auto play after 4 seconds using setInterval function

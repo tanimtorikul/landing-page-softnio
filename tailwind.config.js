@@ -43,6 +43,7 @@ export default {
       spacing: {
         8: "30px",
         30: "120px",
+        19: '74px'
       },
     },
   },

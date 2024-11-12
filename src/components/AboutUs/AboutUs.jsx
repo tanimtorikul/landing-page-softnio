@@ -37,7 +37,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="py-12 xl:py-30 relative overflow-hidden px-8 lg:px-8 xl:px-0">
+    <div className="py-12 xl:py-30 relative overflow-hidden px-8 lg:px-10 xl:px-0">
       {/* background image */}
       <img
         src={bgimage1}
@@ -46,7 +46,7 @@ const AboutUs = () => {
         style={{ objectFit: "cover" }}
       />
       <div className="max-w-container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-20">
+        <div className="flex flex-col lg:flex-row gap-19">
           {/* left side img */}
           <div className="w-full lg:w-1/2 relative">
             <img

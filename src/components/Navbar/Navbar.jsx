@@ -1,12 +1,14 @@
 import { FaBars } from "react-icons/fa6";
 import NavIcon from "../../assets/NavIcon";
 import Button from "../common/Button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  // to track scroll
+  const [scrolling, setScrolling] = useState(false);
   const navLinks = [
-    { label: "Home", href: "#home" },
+    { label: "Home", },
     { label: "About", href: "#about" },
     { label: "Menu", href: "#menu" },
     { label: "Portfolio", href: "#about" },
@@ -18,9 +20,27 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
+  useEffect(() => {
+    window.onscroll = () => {
+      if (window.scrollY > 30) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    // clean up the scroll event handler
+    return () => {
+      window.onscroll = null;
+    };
+  }, []);
 
   return (
-    <div className="sticky top-0 left-0 right-0 z-20 flex justify-between items-center px-8 xl:px-0 py-5 lg:py-6 xl:py-8">
+    <div
+      className={`w-full sticky top-0 left-0 right-0 z-20 flex justify-between items-center px-8 xl:px-0 py-5 lg:py-6 xl:py-8 transition-all duration-300 ${
+        scrolling ? "bg-secondary" : "bg-transparent"
+      }`}
+    >
       {/* left navbar, logo and links */}
       <div className="flex items-center lg:gap-[50px] xl:gap-[60px]">
         <div className="flex items-center gap-1">
