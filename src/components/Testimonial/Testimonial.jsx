@@ -10,36 +10,26 @@ import TestimonialCard from "./TestimonialCard";
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // next
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => {
-      const nextIndex = (prevIndex + 1) % testimonials.length;
-      return nextIndex;
-    });
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   };
 
-  // to go to the prev
   const prevSlide = () => {
-    const totalSlides = Math.ceil(testimonials.length / 4);
-    setCurrentIndex((prevIndex) => (prevIndex - 1) % totalSlides);
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
   };
 
-  //auto play after 2 seconds using setIntercal function
   useEffect(() => {
     const interval = setInterval(nextSlide, 3000);
     return () => clearInterval(interval);
   }, []);
 
-  // duplicate the testimonials items
-  const duplocateTestimonials = [...testimonials, ...testimonials];
-
   return (
-    <div className="bg-[#FBF7F2] lg:min-h-screen py-8 lg:py-30 relative overflow-hidden">
-      {/* 2 bg images for lg screen */}
+    <div className="bg-[#FBF7F2] xl:min-h-screen py-8 lg:py-30 relative overflow-hidden">
+      {/* 2 bg images for xl and lg screen */}
       <img
         src={testimonialbg}
         alt="Background"
-        className="absolute w-96 left-[-12rem] top-96 transform -translate-y-1/2 -rotate-90 hidden lg:block"
+        className="absolute xl:w-96 left-[-12rem] top-96 transform -translate-y-1/2 -rotate-90 hidden lg:block"
         style={{ objectFit: "cover" }}
       />
       <img
@@ -48,7 +38,8 @@ const Testimonial = () => {
         className="absolute w-[28rem] right-[-6rem] bottom-24 transform -translate-y-1/2 rotate-[30deg] hidden lg:block"
         style={{ objectFit: "cover" }}
       />
-      <div className="max-w-container mx-auto px-8 md:px-8 lg:px-0">
+
+      <div className="max-w-container mx-auto px-8 lg:px-8 xl:px-0">
         <div className="flex justify-between items-center mb-4">
           <SectionTitle
             subtitle="Crispy, Every Bite Taste"
@@ -73,15 +64,14 @@ const Testimonial = () => {
 
         {/* slider for testimonial */}
         <Slider currentIndex={currentIndex}>
-          {duplocateTestimonials.map((testimonial, id) => (
+          {testimonials.map((testimonial, id) => (
             <div key={id} className="flex-shrink-0 w-full py-6">
               <TestimonialCard testimonial={testimonial} />
             </div>
           ))}
         </Slider>
 
-        {/* prev next for sm device
-         */}
+        {/* prev next for sm device */}
         <div className="flex justify-center space-x-4 mt-6 lg:hidden">
           <button
             onClick={prevSlide}

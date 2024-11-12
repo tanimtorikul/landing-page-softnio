@@ -35,13 +35,13 @@ const BookingForm = () => {
 
   return (
     <div
-      className="bg-cover lg:bg-cover  min-h-[80vh] bg-no-repeat flex items-center"
+      className="bg-cover min-h-[80vh] bg-no-repeat flex items-center"
       style={{
         backgroundImage: `url(${bookingimg})`,
       }}
     >
       {/* content */}
-      <div className="max-w-container mx-auto py-8 px-8 lg:px-0 w-full">
+      <div className="max-w-container mx-auto py-8 px-8 lg:px-8 xl:px-0 w-full">
         <SectionTitle
           subtitle="Book Now"
           title="Book Your Table"

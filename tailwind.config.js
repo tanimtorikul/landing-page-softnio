@@ -29,9 +29,20 @@ export default {
         "6xl": "62px",
         "9xl": "120px",
       },
+      lineHeight: {
+        56: "56px",
+        130: "130",
+        62: "62px",
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1440px",
+      },
       spacing: {
-        8: "30px", 
-        30:"120px"
+        8: "30px",
+        30: "120px",
       },
     },
   },

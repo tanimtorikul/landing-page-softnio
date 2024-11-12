@@ -23,7 +23,8 @@ const PopularFood = () => {
     const totalSlides = Math.ceil(foods.length / 4);
     setCurrentIndex((prevIndex) => (prevIndex - 1) % totalSlides);
   };
-  //auto play after 2 seconds using setIntercal function
+
+  // auto play after 4 seconds using setInterval function
   useEffect(() => {
     const interval = setInterval(nextSlide, 4000);
     return () => clearInterval(interval);
@@ -31,23 +32,24 @@ const PopularFood = () => {
 
   // duplicate the food items
   const duplicatedFoods = [...foods, ...foods];
+
   return (
     <div className="bg-[#FBF7F2] py-8 lg:py-30 relative overflow-hidden">
-      {/* background img in lg device */}
+      {/* background img for large screens */}
       <img
         src={bgimage1}
         alt="Background"
-        className="absolute w-96 left-[-16rem] top-72 transform -translate-y-1/2 -rotate-[70deg] hidden lg:block"
+        className="absolute lg:w-80 xl:w-96 left-[-16rem] top-72 transform -translate-y-1/2 -rotate-[70deg] hidden lg:block"
         style={{ objectFit: "cover" }}
       />
-      <div className="max-w-container mx-auto px-8 lg:px-0">
-        {/* section title and nav icons flex each other */}
+      <div className="max-w-container mx-auto px-8 lg:px-8 xl:px-0">
+        {/* section title and navigation buttons */}
         <div className="flex justify-between items-center mb-4">
           <SectionTitle
             subtitle="Crispy, Every Bite Taste"
             title="POPULAR FOOD ITEMS"
           />
-          {/* nav icons for larger device */}
+          {/* nav icons for larger devices */}
           <div className="space-x-4 hidden lg:flex">
             <button
               onClick={prevSlide}
@@ -64,7 +66,7 @@ const PopularFood = () => {
           </div>
         </div>
 
-        {/*  using slider compo here and passing the foodcard as children props and passing currentindex */}
+        {/* Slider component for displaying food items */}
         <Slider currentIndex={currentIndex}>
           {duplicatedFoods.map((food, index) => (
             <div key={index} className="flex-shrink-0 w-full lg:w-1/4 px-2">
@@ -73,7 +75,7 @@ const PopularFood = () => {
           ))}
         </Slider>
 
-        {/* nav icons for mobile devices under the card */}
+        {/* Navigation buttons for mobile devices */}
         <div className="flex justify-center space-x-4 mt-6 lg:hidden">
           <button
             onClick={prevSlide}

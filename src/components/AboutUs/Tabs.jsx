@@ -30,7 +30,7 @@ const Tabs = ({ tabs }) => {
           (tab) =>
             tab.label === activeTab && (
               <div key={tab.label}>
-                <h2 className="font-display text-4xl lg:text-6xl">
+                <h2 className="font-display text-4xl leading-[48px] lg:text-6xl lg:leading-62 xl:text-6xl">
                   {tab.contentTitle}{" "}
                 </h2>
 

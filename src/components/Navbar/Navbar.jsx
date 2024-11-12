@@ -20,14 +20,14 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky top-0 left-0 right-0 z-20 flex justify-between items-center px-8 lg:px-0 py-5 lg:py-8">
+    <div className="sticky top-0 left-0 right-0 z-20 flex justify-between items-center px-8 xl:px-0 py-5 lg:py-6 xl:py-8">
       {/* left navbar, logo and links */}
-      <div className="flex items-center gap-[60px]">
+      <div className="flex items-center lg:gap-[50px] xl:gap-[60px]">
         <div className="flex items-center gap-1">
           <NavIcon />
-          <h2 className="text-white font-poppins text-3xl">Restaurant</h2>
+          <h2 className="text-white font-poppins text-[28px]">Restaurant</h2>
         </div>
-        <div className="hidden lg:flex gap-10">
+        <div className="hidden lg:flex gap-8 lg:gap-10">
           {navLinks.map((link, index) => (
             <a
               key={index}
@@ -49,18 +49,18 @@ const Navbar = () => {
 
       <div className="lg:hidden flex items-center">
         <FaBars
-          className="text-white text-3xl cursor-pointer"
+          className="text-white text-2xl lg:text-3xl cursor-pointer"
           onClick={toggleMenu}
         />
       </div>
 
       {/* mobile menu bar, toggle based on screen size */}
       <div
-        className={`absolute top-14 right-0 w-2/3 bg-white text-black p-8 z-20 rounded-lg shadow-lg ${
+        className={`absolute top-14 right-0 w-3/4 lg:w-2/3 bg-white text-black p-6 lg:p-8 z-20 rounded-lg shadow-lg ${
           menuOpen ? "block" : "hidden"
         } lg:hidden`}
       >
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-5 lg:gap-6">
           {navLinks.map((link, index) => (
             <a
               key={index}
